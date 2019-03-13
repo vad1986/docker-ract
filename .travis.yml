@@ -3,8 +3,8 @@ services:
     - docker 
 
 before_install:
-    - docker build -t vadimsdocker/docker-ract -f Dockerfile.dev .
+    -sudo docker build -t vadimsdocker/docker-ract -f Dockerfile.dev .
 
 
 script:
-  - docker run vadimsdocker/docker-ract npm run test -- --coverage
+  - sudo docker run vadimsdocker/docker-ract npm run test -- --coverage
