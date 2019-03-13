@@ -9,4 +9,4 @@ before_install:
 
 
 script:
-  - sudo docker run vadimsdocker/docker-ract npm run test -- --coverage
+  - docker run vadimsdocker/docker-ract npm run test -- --coverage
